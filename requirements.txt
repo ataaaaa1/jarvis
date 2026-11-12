@@ -1,0 +1,5 @@
+websockets>=12.0
+# --- Opsiyonel (ses) ---
+SpeechRecognition>=3.10
+gTTS>=2.5
+pyttsx3>=2.90; sys_platform != "win32"

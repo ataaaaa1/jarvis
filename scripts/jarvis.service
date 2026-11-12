@@ -1,0 +1,15 @@
+[Unit]
+Description=JARVIS — Kişisel yapay zekâ asistanı
+After=network.target
+
+[Service]
+Type=simple
+User=__KULLANICI__
+WorkingDirectory=__JARVIS_YOLU__
+ExecStart=/usr/bin/python3 __JARVIS_YOLU__/run.py
+Restart=on-failure
+RestartSec=3
+Environment=PYTHONUNBUFFERED=1
+
+[Install]
+WantedBy=multi-user.target

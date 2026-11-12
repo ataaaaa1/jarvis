@@ -1,0 +1,37 @@
+J.A.R.V.I.S - BASLATMA REHBERI (Windows)
+========================================
+
+1) PYTHON KUR:
+   - python.org -> "Download Python" -> kurulumda
+     "Add python.exe to PATH" kutusunu ISARETLE -> Install
+   - Windows+R -> cmd -> "python --version" yaz, "Python 3.11+" olmali.
+     (Python yoksa JARVIS calismaz; tarayici sadece HTML'yi acabilir.)
+
+2) ZIP'I C/KAR:
+   ORNEK: C:\Users\KullaniciAdi\Jarvis\
+   Klasorun icinde run.py, jarvis\, requirements.txt olmali.
+
+3) start_jarvis.bat dosyasina CIFT TIKLA.
+   - Konsolda "JARVIS dinliyor: http://0.0.0.0:8765" ve
+     "Token: xxxx" satiri gorursun. Pencereyi KAPATMA.
+   - Windows Guvenlik Duvari sorarsa "Ozellik aglara izin ver"i isaretle.
+
+4) TELEFONDA ACMADAN ONCE KONTROL ET (bilgisayarda):
+   - CMD'de: ipconfig   -> "IPv4 Adresi" satirini oku (orn. 192.168.1.50)
+   - Tarayicida: http://127.0.0.1:8765/?token=TOKEN  (acilmali)
+   - Acilmiyorsa: JARVIS calismiyor -> bat penceresinde hata var demek.
+
+5) TELEFONDAN:
+   - TELEFON ve BILGISAYAR AYNI Wi-Fi'da olmali!
+   - Telefonda tarayici ac:
+     http://192.168.1.50:8765/?token=TOKEN
+   - "Baglanamadi" => ya ayni Wi-Fi'da degilsin ya da Guvenlik Duvari acik.
+
+Kullanim (telefonda yaz):
+   "saat kac", "sistem bilgisi", "bellek", "yardim" (komut listesi)
+   Sesli komut icin Chrome tarayicisini kullan (mikrofon butonu).
+
+Guvenlik:
+   - Tokeni kimseyle paylasma! Telefona tam kontrol verir.
+   - Shell komutlari varsayilan kapali.
+   - Windows'ta ses: sistem SAPI kullanilir (pyttsx3 gerekmez).
